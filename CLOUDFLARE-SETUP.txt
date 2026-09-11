@@ -1,0 +1,32 @@
+LINCOLN MILL RV PARK — CLOUDFLARE SETUP
+
+This is the complete website source. It includes the photographs, responsive design,
+date-based site availability, reservation form, and reservation database code.
+
+IMPORTANT
+This is a full Cloudflare Worker website, not a plain drag-and-drop HTML page.
+The reservation feature requires a Cloudflare D1 database.
+
+CLOUDFLARE DASHBOARD SETUP
+
+1. Extract this ZIP to a folder on your computer.
+2. Put the extracted files into a GitHub repository.
+3. In Cloudflare, open Workers & Pages and choose Create application.
+4. Import the GitHub repository.
+5. Use these build settings:
+      Build command: pnpm install --frozen-lockfile && pnpm run build
+      Deploy command: pnpm exec wrangler deploy --config dist/server/wrangler.json
+6. In Cloudflare D1, create a database for reservations.
+7. Add a D1 binding named DB to the Worker.
+8. Run the SQL file drizzle/0000_shocking_emma_frost.sql on that D1 database.
+9. Deploy the Worker and connect lincolnmillrvpark.com under Custom Domains.
+
+BEFORE GOING PUBLIC
+The starting inventory is Site 1 through Site 12. Update app/page.tsx with the park's
+real number of spaces, maximum lengths, hookup types, rates, and current reservations.
+
+The included photographs are professional Lake Roosevelt-style regional images. They
+are not photographs of the actual Lincoln Mill RV Park property.
+
+If you only upload the files to Cloudflare Pages by drag and drop, the page may display,
+but live reservation saving will not work. Use the Worker and D1 steps above.
