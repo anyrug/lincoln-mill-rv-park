@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Check Availability | Lincoln Mill RV Park</title>
+<meta name="description" content="Build a booking request for Lincoln Mill RV Park near Lake Roosevelt.">
+<link rel="canonical" href="https://www.lincolnmillrvpark.com/booking.html">
+<meta name="theme-color" content="#123b32">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="topbar"><div class="wrap"><span>Lake Roosevelt • Lincoln, Washington</span><span>38889 Redwine Canyon Rd N • (509) 636-2002</span></div></div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><span class="logo-mark">⌁</span><span>Lincoln Mill RV Park</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="navlinks">
+      <a href="camping.html">RV Camping</a>
+      <a href="rates.html">Sites & Rates</a>
+      <a href="monthly.html">Monthly</a>
+      <a href="fishing-boating.html">Fishing & Boating</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="directions.html">Directions</a>
+      <a class="btn" href="booking.html">Check Availability</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="wrap"><div class="breadcrumbs"><a href="index.html">Home</a> / Booking</div><h1>Check Availability</h1><p>Send your dates, rig length and power needs, then call the park to confirm your reservation.</p></div></section>
+<main>
+<section><div class="wrap grid-2" style="align-items:start">
+<div>
+<div class="section-head"><div class="kicker">Booking Request</div><h2>Tell us about your stay.</h2><p class="lead">Fill this out to build a booking request. On a phone, you can prepare it as a text message to the park. A reservation is not confirmed until the park confirms availability.</p></div>
+<div class="card"><h3>Call to book</h3><p style="font-size:1.25rem"><strong><a href="tel:+15096362002">(509) 636-2002</a></strong></p><p>Have your dates, RV length and power requirements ready.</p></div>
+</div>
+<div class="card">
+<form id="bookingForm">
+<div class="form-grid">
+<div><label>Name<input name="name" required></label></div>
+<div><label>Phone<input name="phone" type="tel" required></label></div>
+<div><label>Arrival<input name="arrival" type="date" required></label></div>
+<div><label>Departure<input name="departure" type="date" required></label></div>
+<div><label>RV / Rig Type<select name="rig"><option>Motorhome</option><option>Fifth wheel</option><option>Travel trailer</option><option>Camper / Other</option></select></label></div>
+<div><label>Rig Length<input name="length" placeholder="Example: 32 ft"></label></div>
+<div><label>Power Needed<select name="power"><option>Not sure</option><option>30 amp</option><option>50 amp</option></select></label></div>
+<div><label>Guests<input name="guests" type="number" min="1" value="2"></label></div>
+<div><label>Pets<select name="pets"><option>No</option><option>Yes</option></select></label></div>
+<div><label>Boat / Extra Trailer<select name="boat"><option>No</option><option>Yes</option></select></label></div>
+<div class="full"><label>Notes<textarea name="notes" placeholder="Anything the park should know?"></textarea></label></div>
+<div class="full"><button class="btn" type="submit">Create Booking Request</button></div>
+</div>
+</form>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><button id="copyRequest" class="btn light" style="display:none">Copy Request</button><button id="textRequest" class="btn gold" style="display:none">Prepare Text Message</button></div>
+<div id="bookingOutput" class="output"></div>
+</div>
+</div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><h3>Lincoln Mill RV Park</h3><p>RV camping near Lake Roosevelt with full hookups, Wi‑Fi, showers, laundry and easy access to fishing and boating.</p></div>
+      <div><h3>Contact</h3><p>38889 Redwine Canyon Rd N<br>Lincoln, WA 99147</p><p><a href="tel:+15096362002">(509) 636-2002</a></p></div>
+      <div><h3>Plan Your Stay</h3><p><a href="rates.html">Rates</a><br><a href="booking.html">Booking Request</a><br><a href="directions.html">Directions</a></p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Lincoln Mill RV Park. Rates and availability are subject to change. Call to confirm.</div>
+  </div>
+</footer>
+<a class="btn mobile-call" href="tel:+15096362002">☎ Call (509) 636-2002</a>
+<script src="assets/site.js"></script>
+</body></html>
